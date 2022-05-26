@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+
+/* navbar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+    background-color: aliceblue;
+    box-shadow:  2px 0 20px #020202;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav img {
+    margin-left: 20px;
+}
+
+.nav .nav-items {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 15%;
+}
+
+.icon {
+    color: black;
+}
+
+.globe {
+    font-size: 22px;
+    left: 8%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    margin: auto 0;
+}
+
+.nav .nav-items .nav-bx {
+    color: black;
+    margin-left: 27px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.down {
+    position: absolute;
+    font-size: 17px;
+    top: 50%;
+    bottom: 50%;
+    margin: auto 0;
+    margin-left: 2px;
+}
+
+.main{
+    font-size: 25px; 
+}
+
+/* fin de navbar */
+
+
+/* movie1 */
+
+.movie1 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 15%;
+    z-index: -2;
+}
+
+.movie1::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 93vh;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.movie1 .video {
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+/* fin de movie1 */
+
+
+/* actualité */
+
+.actu .content {
+    margin: 0 auto;
+}
+
+.actu .content {
+    display: flex;
+    justify-content: center;
+}
+
+.actu .content .info {
+    flex-basis: 55%;
+}
+
+.actu .content .info h1 {
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 42px;
+}
+
+.actu .content .info p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.actu .content .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    border: solid 1px #0095f3;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    flex-basis: 23%;
+}
+
+.actu .content .passive {
+    color: #0095f3;
+    margin-right: 17px;
+}
+
+.actu .content .action .active {
+    background-color: #0095f3;
+    color: whitesmoke;
+    padding: 12px 18px;
+    border-radius: 50px;
+}
+
+/* fin de actualité */
+
+
+
+/* image employee */
+
+.section-card {
+    position: relative;
+    margin: 3% 0;
+    display: flex;
+    height: 76vh;
+    margin-bottom: 7%;
+    overflow-x: hidden;
+}
+
+.card-items .item {
+    position: relative;
+    margin-left: 30px;
+    z-index: -3;
+}
+
+.card-items .item::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    border-radius: 17px;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.card-items .item .content {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-top: 50%;
+    width: 90%;
+}
+
+.section-card .card-items img {
+    width: 350px;
+    height: 500px;
+    border-radius: 17px;
+}
+
+/* fin de image employee */
+
+
+/* titre du jeux */
+
+.title {
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+    margin-top: 11%;
+    text-align: center;
+}
+
+.title h1 {
+    margin-bottom: 2.2%;  
+}
+
+.title p {
+    text-align: justify;
+    font-size: 16.5px;
+    font-weight: lighter;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 25px;
+}
+
+.title a {
+    background-color: #33aaf5;
+    color: whitesmoke;
+    padding: 11px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* fin du titre du jeux */
+
+
+/* movie 2 */
+
+.movie {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5%;
+    z-index: -2;
+}
+
+.movie .video {
+    z-index: -3;
+    background-color: red;
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.movie::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #cc1e66, #c9007d, #b9009d, #9400c3, #2312eb);
+    opacity: .7;
+}
+
+/* fini movie 2 */
+
+
+/* detail */
+
+.detail {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+    width: 35%;
+    height: 100%;
+    margin-left: 180px;
+}
+
+.detail h1{
+    margin-bottom: 22px;
+    border-bottom: 1px solid white;
+    padding: 2% 0; 
+    width: 50%;
+}
+
+.detail p{
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.detail a {
+    color: whitesmoke;
+    margin-right: 32px;
+}
+
+.detail .action-bx {
+    margin-top: 22px;
+}
+
+.detail .active {
+    border: solid 1px white;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+/* fin de detail */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.card-items .item .content {
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 251, 0, 0.267);
+    width: 100%; height: 55vh;
+} */
